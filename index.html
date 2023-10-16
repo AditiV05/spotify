@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+ <style>
+     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-color: black;
+    }
+    #sidebar{
+        height: 1000px;
+        width: 300px;
+        background-color: #121212;
+        flex-direction: column;
+    }
+    #logo{
+        height: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+        padding-top: 20px;
+    }
+    #Home{
+        
+        height: 17px;
+        margin-top: 50px;
+        margin-left: 35px;
+    }
+    #search{
+        
+        height: 17px;
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+    #library{
+        
+        height: 17px;
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+    #create{
+        
+        height: 17px;
+        margin-top: 30px;
+        margin-left: 35px;
+    }
+    #liked{
+       
+        height: 17px;
+        margin-top: 9px;
+        margin-left: 35px;
+    }
+    #episodes{
+        
+        height: 17px;
+        margin-top: 9px;
+        margin-left: 35px;
+    }
+    #home{
+        
+        color: white;
+        position: absolute;
+        margin-left: 37px;
+        margin-top: 50px;
+    }
+    #search1{
+        
+        color: white;
+        position: absolute;
+        margin-left: 36px;
+        margin-top: 14px;
+    }
+    #library2{
+        
+        color: white;
+        position: absolute;
+        margin-left: 36px;
+        margin-top: 14px;
+    }
+    #create2{
+        
+        color: white;
+        position: absolute;
+        margin-left: 36px;
+        margin-top: 28px;
+    }
+    #liked2{
+        
+        color: white;
+        position: absolute;
+        margin-left: 36px;
+        margin-top: 8px;
+    }
+    #episodes2{
+        
+        color: white;
+        position: absolute;
+        margin-left: 36px;
+        margin-top: 8px;
+    }
+    #fav{
+        
+        color: white;
+        position: absolute;
+        margin-top: 25px;
+        margin-left: 33px;
+    }
+    #daily{
+        
+        color: white;
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 33px;
+    }
+    #discover{
+       
+        color: white;
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 33px;
+    }
+    #mal{
+        
+        color: white;
+        position: absolute;
+        margin-top: 140px;
+        margin-left: 33px;
+    }
+    #dance{
+       
+        color: white;
+        position: absolute;
+        margin-top: 180px;
+        margin-left: 33px;
+    }
+    #edm{
+        
+        color: white;
+        position: absolute;
+        margin-top: 220px;
+        margin-left: 33px;
+    }
+    #down{
+       
+        height: 20px;
+        position: absolute;
+        margin-top: 270px;
+        margin-left: 33px;
+    }
+    #down2{
+        
+        color: white;
+        position: absolute;
+        margin-top: 272px;
+        margin-left: 88px;
+    }
+    #arrow{
+        
+        position: absolute;
+        height: 29px;
+        margin-left: 150px;
+        margin-top: 20px;
+    }
+    H2{
+        color: white;
+        position: absolute;
+        margin-left: 320px;
+        margin-top: 38px;
+        font-family: "Poppins";
+    }
+    #song{
+        height: 60px;
+        position: absolute;
+        margin-left: 320px;
+        margin-top: 100px;
+        padding-right: 200px;
+        background-color: lightgrey;
+    }
+    #heart{
+        height: 20px;
+        position: absolute;
+        margin-left: 340px;
+        margin-top: 120px;
+    }
+    #netflix{
+        height: 60px;
+        position: absolute;
+        margin-left: 620px;
+        margin-top: 99px;
+        padding-right: 200px;
+        background-color: lightgrey;
+    }
+    #fairy{
+        position: absolute;
+        margin-left: 920px;
+        margin-top: 99px;
+        height: 60px;
+        padding-right: 200px;
+        background-color: lightgrey;
+    }
+    #women{
+        position: absolute;
+        margin-left: 1210px;
+        margin-top: 99px;
+        height: 60px;
+        padding-right: 200px;
+        background-color: lightgrey;
+    }
+    #marsh{
+        position: absolute;
+        height: 60px;
+        margin-left: 320px;
+        margin-top: 200px;
+        padding-right: 200px;
+        background-color: lightgrey;
+    }
+    #show{
+        color: white;
+        position: absolute;
+        margin-left: 320px;
+        margin-top: 300px;
+        font-family: "Poppins";
+    }
+    #man{
+        height: 150px;
+        position: absolute;
+        margin-left: 320px;
+        margin-top: 370px;
+    }
+    #girl{
+        height: 150px;
+        position: absolute;
+        margin-left: 510px;
+        margin-top: 370px;
+    }
+    #specs{
+        height: 150px;
+        position: absolute;
+        margin-left: 700px;
+        margin-top: 370px;
+    }
+    #water{
+        height: 150px;
+        position: absolute;
+        margin-left: 890px;
+        margin-top: 370px;
+    }
+    #wind{
+        height: 150px;
+        position: absolute;
+        margin-left: 1080px;
+        margin-top: 370px;
+    }
+    #black{
+       height: 150px;
+       position: absolute;
+       margin-left: 1280px;
+       margin-top: 374px;
+    }
+    #player{
+        height: 70px;
+        position: absolute;
+        margin-top: 310px;
+        margin-left: 600px;
+    }
+   
+ </style>
+<body>
+    <div id="sidebar"> 
+        <img id="logo" src="Spotify logo.png" alt="">
+        <img id="arrow" src="arrow.png" alt="">
+        <div> 
+            <h2>GOOD MORNING</h2>
+        </div>
+        <div>
+            <img id="song" src="liked.png">
+            <span><img id="heart" src="heart.png"> </span>
+        </div>
+        <div>
+            <img id="netflix" src="netflix.png">
+        </div>
+        <div>
+            <img id="fairy" src="fairy.png">
+        </div>
+        <div>
+            <img id="women" src="women.png">
+        </div>
+        <div>
+            <img id="marsh" src="marsh.png">
+        </div>
+        <div>
+            <h2 id="show"> SHOWS YOU MIGHT LIKE</h2>
+        </div>
+        <div>
+            <img id="man" src="man.png">
+        </div>
+        <div>
+            <img id="girl" src="girl.png">
+        </div>
+        <div>
+            <img id="specs" src="specs.png">
+        </div>
+        <div>
+            <img id="water" src="water.png">
+        </div>
+        <div>
+            <img id="black" src="black.png">
+        </div>
+        <div>
+            <img id="wind" src="wind.png">
+        </div>
+        <div>
+            <img id="Home" src="Home.png" alt="">
+             <span id="home">Home</span>
+        </div>
+        <div>
+            <img id="search" src="Search.png" alt="">
+            <span id="search1">Search</span>
+        </div>
+        <div>
+            <img id="library" src="library.png" alt="">
+            <span id="library2"> Your library </span>
+        </div>
+        <div>
+            <img id="create" src="create.png" alt="">
+            <span id="create2"> Create Playlist </span>
+        </div>
+        <div>
+            <img id="liked" src="liked.png" alt="">
+            <span id="liked2"> Liked Songs </span>
+        </div>
+        <div>
+            <img id="episodes" src="episodes.png" alt="">
+            <span id="episodes2"> Your Episodes </span>
+        </div>
+        <div> 
+            <span id="fav"> FAV </span>
+        </div>
+        <div> 
+            <span id="daily"> DAILY MIX </span>
+        </div>
+        <div> 
+            <span id="discover"> DISCOVER WEEKLY </span>
+        </div>
+        <div> 
+            <span id="mal"> MALAYALAM </span>
+        </div>
+        <div> 
+            <span id="dance"> DANCE/ELECTRONIX MIX </span>
+        </div>
+        <div> 
+            <span id="edm"> EDM/popular </span>
+        </div>
+        <div>
+            <img id="down" src="down.png" alt="">
+            <span id="down2"> INSTALL  APP </span>
+        </div>
+        <div>
+            <img id="player" src="player.png">
+        </div>
+    </div>
+
+    <div id="bar">
+
+    </div>
+
+   
+
+    
+
+
+</body>
+</html>
